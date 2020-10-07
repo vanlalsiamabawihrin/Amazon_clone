@@ -8,13 +8,18 @@ import Subtotal from "./Subtotal";
 import Login from "./Login";
 import { auth } from "./firebase";
 import { useStateValue } from "./StateProvider";
+import Payment from "./Payment";
+import { loadStripe } from "@stripe/stripe-js";
+import { Elements } from "@stripe/react-stripe-js";
+
+const promise = loadStripe("pk_test_51HXRTHKEgNlIV5KX9pYvnK9TSTLk2IBrymVZHNhlBZHuE1EshCKuPOnKk820HKzxQDVWPL0VJHzC7vb28Elh9CPz00nInyHoJw");
 
 // always put home page at bottom in switch to act as a default in switch method
 function App() {
   const [{}, dispatch] = useStateValue();
+
   useEffect(() => {
     auth.onAuthStateChanged((authUser) => {
-      console.log("the user is", authUser);
       if (authUser) {
         dispatch({
           type: "SET_USER",
@@ -38,6 +43,12 @@ function App() {
           <Route path="/checkout">
             <Header />
             <Checkout />
+          </Route>
+          <Route path="/payment">
+            <Header />
+            <Elements stripe={promise}>
+              <Payment />
+            </Elements>
           </Route>
           <Route path="/">
             <Header />
