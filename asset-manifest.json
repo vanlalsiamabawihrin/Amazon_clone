@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/github.io/amazon_clone/static/css/main.2be35fa7.chunk.css",
+    "main.js": "/github.io/amazon_clone/static/js/main.d15e7a18.chunk.js",
+    "main.js.map": "/github.io/amazon_clone/static/js/main.d15e7a18.chunk.js.map",
+    "runtime-main.js": "/github.io/amazon_clone/static/js/runtime-main.b9c6c483.js",
+    "runtime-main.js.map": "/github.io/amazon_clone/static/js/runtime-main.b9c6c483.js.map",
+    "static/js/2.246c0946.chunk.js": "/github.io/amazon_clone/static/js/2.246c0946.chunk.js",
+    "static/js/2.246c0946.chunk.js.map": "/github.io/amazon_clone/static/js/2.246c0946.chunk.js.map",
+    "index.html": "/github.io/amazon_clone/index.html",
+    "precache-manifest.4a63d4d899b392acef132b9bdd76f4ff.js": "/github.io/amazon_clone/precache-manifest.4a63d4d899b392acef132b9bdd76f4ff.js",
+    "service-worker.js": "/github.io/amazon_clone/service-worker.js",
+    "static/css/main.2be35fa7.chunk.css.map": "/github.io/amazon_clone/static/css/main.2be35fa7.chunk.css.map",
+    "static/js/2.246c0946.chunk.js.LICENSE.txt": "/github.io/amazon_clone/static/js/2.246c0946.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b9c6c483.js",
+    "static/js/2.246c0946.chunk.js",
+    "static/css/main.2be35fa7.chunk.css",
+    "static/js/main.d15e7a18.chunk.js"
+  ]
+}
